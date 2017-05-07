@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+''' audio_visualization.py V1.
+A Realtime Audio Visualization in python using a Raspberrypi + Sense HAT and a USB microphone.
+Launch with root user.
+Press Control + C, to exit.'''
+
 from sense_hat import SenseHat
 import alsaaudio, audioop
 from time import sleep
@@ -35,7 +41,6 @@ if __name__ == "__main__":
   inp.setrate(8000)
   inp.setformat(alsaaudio.PCM_FORMAT_S16_LE)
   inp.setperiodsize(160)
-  quit(1)
 
   # Clean screen
   screen = [black] * ( 8 * 8 ) 
