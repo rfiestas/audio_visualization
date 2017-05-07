@@ -3,6 +3,7 @@ Realtime Audio Visualization
 
 Description
 -------
+A Realtime Audio Visualization using a Raspberrypi + Sense HAT and a USB microphone.
 On this script i use a USB microphone to get the audio, then calculate volume and represent in the 8 x 8 RGB LED matrix, 
 
 The [Sense Hat](https://www.raspberrypi.org/documentation/hardware/sense-hat/) is an add-on board for [Raspberry Pi](https://www.raspberrypi.org/), made especially for the Astro Pi mission.
@@ -34,5 +35,5 @@ audio_visualization.py
 Press Contol + C, to stop script.
 
 Notes:
-
+-------
   - Alsa Audio need libasound2-dev
